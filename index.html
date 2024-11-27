@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Me Coin</title>
+    <script>
+        function shareRandomNumber() {
+            // Generate a random number between 1 and 100
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+            // Create the tweet content
+            const tweetText = `I rate you ${randomNumber}!%0A%0A$RATEMECOIN`;
+
+            // Redirect to Twitter's tweet intent page
+            window.open(`https://twitter.com/intent/tweet?text=${tweetText}`, '_blank');
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <h1>Rate Me Coin</h1>
+        <p>Click the button below to get your random rating and share it on Twitter!</p>
+        <button onclick="shareRandomNumber()" style="padding: 10px 20px; font-size: 18px;">Get Rated</button>
+    </div>
+</body>
+</html>
